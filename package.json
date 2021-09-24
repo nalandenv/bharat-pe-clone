@@ -1,0 +1,12 @@
+{
+  "name": "bharat-pe",
+  "version": "1.0.0",
+  "description": "Bharat pe page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "sass --watch ./public/stylesheets/scss/main.scss ./public/stylesheets/css/main.css"
+  },
+  "author": "Nikhil Nalande",
+  "license": "ISC"
+}

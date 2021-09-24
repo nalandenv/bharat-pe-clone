@@ -32,10 +32,29 @@
     top: 50%;
     left: 50%;
     transform: translate(-55%, -50%);
+    animation: load 5s;
+  }
+  @keyframes load {
+    from {
+      transform: translate(-100%, 0%);
+    }
+    to {
+      transform: translate(-55%, -50%);
+    }
   }
   .logo {
+    transform: translateY(-90%);
+    animation: first 5s;
     img {
       height: 7vw;
+    }
+  }
+  @keyframes first {
+    from {
+      transform: translateY(-150%);
+    }
+    to {
+      transform: translateY(-90%);
     }
   }
 }
@@ -84,5 +103,16 @@
     100% {
       transform: translateY(-78%);
     }
+  }
+}
+.bot {
+  animation: first-bot 5s;
+}
+@keyframes first-bot {
+  from {
+    transform: translateY(30%);
+  }
+  to {
+    transform: translateY(0);
   }
 }

@@ -1,0 +1,92 @@
+@font-face {
+  font-family: gilroy;
+  src: url("/public/assets/fonts/gilroy.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.head-section {
+  position: relative;
+  background-color: #000000;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head-section .content {
+  width: auto;
+}
+.head-section .content h2 {
+  font-family: gilroy;
+  max-width: 980px;
+  width: 80vw;
+  font-size: 7.815vw;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  color: #e0e0e0;
+}
+.head-section #grad {
+  position: fixed;
+  opacity: 0.2;
+  max-width: 95vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%);
+}
+.head-section .logo img {
+  height: 7vw;
+}
+
+.mask {
+  position: relative;
+  height: 8vw;
+  font-family: gilroy;
+  font-size: 7.815vw;
+  letter-spacing: -0.02em;
+  color: #e0e0e0;
+  overflow: hidden;
+}
+.mask .anim-text {
+  position: relative;
+  height: auto;
+  animation: go-up 6s infinite;
+}
+.mask .anim-text .lend {
+  color: #0ec15d;
+  font-weight: 700;
+}
+.mask .anim-text .fint {
+  color: #fa7671;
+}
+.mask .anim-text .loy {
+  color: #8a7cfb;
+}
+@keyframes go-up {
+  0% {
+    transform: translateY(-3%);
+  }
+  28% {
+    transform: translateY(-3%);
+  }
+  33% {
+    transform: translateY(-28%);
+  }
+  61% {
+    transform: translateY(-28%);
+  }
+  66% {
+    transform: translateY(-53%);
+  }
+  95% {
+    transform: translateY(-53%);
+  }
+  100% {
+    transform: translateY(-78%);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

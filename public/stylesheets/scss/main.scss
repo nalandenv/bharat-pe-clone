@@ -2,7 +2,7 @@
 @use "./abstracts/variables" as vars;
 @font-face {
   font-family: gilroy;
-  src: url("/public/assets/fonts/gilroy.ttf");
+  src: url("./public/assets/fonts/gilroy.ttf");
 }
 $font-gilroy: gilroy;
 * {

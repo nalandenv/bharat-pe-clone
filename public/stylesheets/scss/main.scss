@@ -1,13 +1,14 @@
 @use "./abstracts/mixins" as mixins;
 @use "./abstracts/variables" as vars;
+@font-face {
+  font-family: gilroy;
+  src: url("/public/assets/fonts/gilroy.ttf");
+}
+$font-gilroy: gilroy;
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-@font-face {
-  font-family: gilroy;
-  src: url("/public/assets/fonts/gilroy.ttf");
 }
 .head-section {
   position: relative;
@@ -21,7 +22,7 @@
   .content {
     width: auto;
     h2 {
-      font-family: vars.$font-gilroy;
+      font-family: $font-gilroy;
       max-width: 980px;
       width: 80vw;
       font-size: 7.815vw;
@@ -91,7 +92,7 @@
 .mask {
   position: relative;
   height: 8vw;
-  font-family: vars.$font-gilroy;
+  font-family: $font-gilroy;
   font-size: 7.815vw;
   letter-spacing: -0.02em;
   color: #e0e0e0;

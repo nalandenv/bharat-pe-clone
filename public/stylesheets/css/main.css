@@ -1,6 +1,6 @@
 @font-face {
   font-family: gilroy;
-  src: url("./public/assets/fonts/gilroy.ttf");
+  src: url("/public/assets/fonts/gilroy.ttf");
 }
 * {
   margin: 0;
@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: gilroy;
+  src: url("/public/assets/fonts/gilroy.ttf");
+}
 .head-section {
   position: relative;
   background-color: #000000;

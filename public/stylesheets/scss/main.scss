@@ -153,11 +153,46 @@ $font-gilroy: gilroy;
   width: 100vw;
   height: 100vh;
   z-index: 99;
+  overflow: hidden;
   .slider {
-    width: 100%;
+    width: 400%;
+    display: flex;
+    flex-direction: row;
     height: 100%;
-    #slide-one {
-      background-color: rgb(237, 240, 240);
+    transition: transform 0.2s linear;
+    .slide {
+      width: 25%;
+
+      &-one {
+        background-color: rgb(145, 82, 170);
+      }
+      &-two {
+        background-color: rgb(82, 170, 144);
+      }
+      &-three {
+        background-color: rgb(170, 125, 82);
+      }
+    }
+  }
+  .btn {
+    position: absolute;
+    bottom: 10%;
+    width: 50px;
+    height: 50px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    z-index: 89;
+    box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+    svg {
+      height: 1em;
+    }
+    &-left {
+      left: 10%;
+    }
+    &-right {
+      right: 10%;
+      transform: rotate(180deg);
     }
   }
 }

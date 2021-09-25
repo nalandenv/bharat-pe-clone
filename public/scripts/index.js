@@ -36,3 +36,20 @@ const changeSlide = (direction, trans, slideN, val) => {
   console.log({ slideNum });
   slider.style.transform = `translateX(${currentTrans - val}%)`;
 };
+
+let didScroll = false;
+
+const scrollInProgress = () => {
+  didScroll = true;
+};
+
+const raf = () => {
+  if (didScroll) {
+    whatsIn.style.transform = "translateY(-" + window.scrollY / 2.08 + "%)";
+    didScroll = false;
+  }
+  requestAnimationFrame(raf);
+};
+
+requestAnimationFrame(raf);
+window.addEventListener("scroll", scrollInProgress);

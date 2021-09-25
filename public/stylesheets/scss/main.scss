@@ -159,40 +159,82 @@ $font-gilroy: gilroy;
     display: flex;
     flex-direction: row;
     height: 100%;
-    transition: transform 0.2s linear;
+    transition: transform 0.4s ease-in;
     .slide {
+      position: relative;
       width: 25%;
-
+      color: #ffffff;
+      .slide-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 20vh;
+        text-align: center;
+        h3 {
+          font-family: $font-gilroy;
+          font-size: 40px;
+        }
+        .card-image {
+          img {
+            max-width: 50vw;
+          }
+        }
+      }
       &-one {
-        background-color: rgb(145, 82, 170);
+        background-color: rgb(237, 240, 240);
+        color: #004c68;
       }
       &-two {
-        background-color: rgb(82, 170, 144);
+        background-color: rgb(30, 25, 66);
       }
       &-three {
-        background-color: rgb(170, 125, 82);
+        background-color: rgb(41, 178, 103);
       }
     }
   }
   .btn {
     position: absolute;
-    bottom: 10%;
+    bottom: 11%;
     width: 50px;
     height: 50px;
     border-radius: 9999px;
     border: none;
     cursor: pointer;
     z-index: 89;
+    background-color: #ffffff;
     box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
     svg {
       height: 1em;
     }
     &-left {
-      left: 10%;
+      left: 11%;
     }
     &-right {
-      right: 10%;
+      right: 11%;
       transform: rotate(180deg);
     }
+  }
+  h1 {
+    position: absolute;
+    z-index: 98;
+    width: 100%;
+    text-align: center;
+    font-family: $font-gilroy;
+    font-size: 7.815vw;
+    top: 10%;
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    color: #444;
+  }
+  .slide-logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.2;
+    z-index: 50;
+    height: 24vw;
   }
 }

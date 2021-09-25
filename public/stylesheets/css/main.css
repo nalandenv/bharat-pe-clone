@@ -156,40 +156,81 @@
   display: flex;
   flex-direction: row;
   height: 100%;
-  transition: transform 0.2s linear;
+  transition: transform 0.4s ease-in;
 }
 .slider-container .slider .slide {
+  position: relative;
   width: 25%;
+  color: #ffffff;
+}
+.slider-container .slider .slide .slide-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 20vh;
+  text-align: center;
+}
+.slider-container .slider .slide .slide-content h3 {
+  font-family: gilroy;
+  font-size: 40px;
+}
+.slider-container .slider .slide .slide-content .card-image img {
+  max-width: 50vw;
 }
 .slider-container .slider .slide-one {
-  background-color: #9152aa;
+  background-color: #edf0f0;
+  color: #004c68;
 }
 .slider-container .slider .slide-two {
-  background-color: #52aa90;
+  background-color: #1e1942;
 }
 .slider-container .slider .slide-three {
-  background-color: #aa7d52;
+  background-color: #29b267;
 }
 .slider-container .btn {
   position: absolute;
-  bottom: 10%;
+  bottom: 11%;
   width: 50px;
   height: 50px;
   border-radius: 9999px;
   border: none;
   cursor: pointer;
   z-index: 89;
+  background-color: #ffffff;
   box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
 }
 .slider-container .btn svg {
   height: 1em;
 }
 .slider-container .btn-left {
-  left: 10%;
+  left: 11%;
 }
 .slider-container .btn-right {
-  right: 10%;
+  right: 11%;
   transform: rotate(180deg);
+}
+.slider-container h1 {
+  position: absolute;
+  z-index: 98;
+  width: 100%;
+  text-align: center;
+  font-family: gilroy;
+  font-size: 7.815vw;
+  top: 10%;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  color: #444;
+}
+.slider-container .slide-logo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.2;
+  z-index: 50;
+  height: 24vw;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,5 +8,8 @@
     "watch-sass": "sass --watch ./public/stylesheets/scss/main.scss ./public/stylesheets/css/main.css"
   },
   "author": "Nikhil Nalande",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.42.1"
+  }
 }

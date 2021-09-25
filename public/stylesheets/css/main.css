@@ -233,4 +233,22 @@
   height: 24vw;
 }
 
+@media screen and (max-width: 900px) {
+  .slide-content {
+    flex-direction: column !important;
+    margin-top: 30vh !important;
+  }
+  .slide-content h3 {
+    font-size: 23px !important;
+  }
+
+  .head-section .content .logo img {
+    height: 50px;
+  }
+  .head-section .content .bot h2,
+.head-section .content .bot span {
+    font-size: 32px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

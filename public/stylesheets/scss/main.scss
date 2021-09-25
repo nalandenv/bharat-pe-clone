@@ -238,3 +238,28 @@ $font-gilroy: gilroy;
     height: 24vw;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .slide-content {
+    flex-direction: column !important;
+    margin-top: 30vh !important;
+    h3 {
+      font-size: 23px !important;
+    }
+  }
+  .head-section {
+    .content {
+      .logo {
+        img {
+          height: 50px;
+        }
+      }
+      .bot {
+        h2,
+        span {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
